@@ -1,0 +1,26 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>Hello World Tag Lib</short-name>
+    <!-- uri can be whatever you choose, it does not have to point to a real uri
+         the uri will be used in the jsps that use the tag lib -->
+    <uri>http://com.stevemcnatt.customtags</uri>
+    <tag>
+        <!-- name defines the tag that will be used in the jsps to call your tag code -->
+        <name>Hello</name>
+        <!-- tag-class is the fully defined class containing the doTag()
+             method that should run when <Hello> is used -->
+        <tag-class>com.stevemcnatt.customtags.HelloWorldTag</tag-class>
+        <!-- body-content is used to pass values to your tag code -->
+        <body-content>empty</body-content>
+    </tag>
+    <tag>
+        <!-- name defines the tag that will be used in the jsps to call your tag code -->
+        <name>Greetings</name>
+        <!-- tag-class is the fully defined class containing the doTag()
+             method that should run when <Hello> is used -->
+        <tag-class>com.stevemcnatt.customtags.GreetingsTag</tag-class>
+        <!-- body-content is used to pass values to your tag code -->
+        <body-content>empty</body-content>
+    </tag>
+</taglib>
